@@ -1,0 +1,258 @@
+/* styles.css */
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0px auto;
+}
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+div.inline {
+  display: inline-block;
+}
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  padding: 5px;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 200px;
+}
+
+form.search {
+  position: relative;
+  text-align: right; /* căn phải toàn bộ form */
+}
+
+
+input.keyword,
+input[type="submit"] {
+  display: inline-block; /* đưa các phần tử trên cùng một hàng */
+}
+
+input.keyword {
+  position: absolute;
+  margin-right: 220px;
+  width: 150px;
+  padding: 4px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  
+}
+input[type="submit"] {
+  position: relative;
+  margin-right: -10px;
+  background-color: #7c7cd9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px; /* đặt giá trị cho padding chính xác */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #4A4AE6;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: none;
+}
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid rgb(244, 244, 244);
+  padding: 10px;
+  transition: 0.3s;
+  
+  }
+  div.border-bottom:hover {
+  background-color: #f5f5f5;
+  }
+  div.float-left {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  
+  div.float-right {
+    float: right;
+    margin-left: 10px;
+  }
+  div.float-clear {
+  clear: both;
+  }
+  .header {
+    position: relative;
+  }
+  ul.menu a {
+    text-decoration: none;
+  }
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  li.menu {
+    display: inline;
+    position: relative;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  li.menu::before {
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    bottom: -5px;
+    width: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg,cyan,blue);
+    transition: 0.3s;
+  }
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+  }
+  
+  li.menu:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--primary-color), 15%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  ul.menu:hover li.menu {
+    filter: blur(1px);
+  }
+  ul.menu li.menu:hover {
+    filter: blur(0);
+  }
+  li.menu:hover::before {
+    width: 100%;
+  }
+
+form.search:hover {
+  background-color: #f5f5f5;
+  }
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+}
+/* header */
+tr:first-child.datatable {
+  background-color: #6363cd;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}  
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+  transition: all 0.3s ease-in-out;
+}
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #cacafd;
+  transition: all 0.3s ease-in-out;
+}
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.align-center h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #6363cd;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.align-valign-center h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #6363cd;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.float-left h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #6363cd;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.float-right h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #6363cd;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

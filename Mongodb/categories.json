@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "64a61287d6bfe2c314ac223f"
+  },
+  "name": "Quần Short"
+},
+{
+  "_id": {
+    "$oid": "64a6128dd6bfe2c314ac2242"
+  },
+  "name": "Áo Sơ Mi"
+},
+{
+  "_id": {
+    "$oid": "64b788f93037b9405bf8b431"
+  },
+  "name": "Quần Dài"
+},
+{
+  "_id": {
+    "$oid": "64b789153037b9405bf8b436"
+  },
+  "name": "Áo Khoác"
+},
+{
+  "_id": {
+    "$oid": "64b789213037b9405bf8b439"
+  },
+  "name": "Áo Thun"
+}]
